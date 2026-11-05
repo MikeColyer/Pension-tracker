@@ -1,1 +1,87 @@
-:root{font-family:system-ui,-apple-system,sans-serif;color:#17283c;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header{background:#142b46;color:white;padding:18px max(16px,calc((100vw - 960px)/2))}h1{font-size:1.4rem;margin:0 0 14px}small{font-size:.7rem;font-weight:400;opacity:.7}nav{display:flex;gap:8px}button{cursor:pointer;border:0;border-radius:8px;padding:10px 14px;background:#1464a2;color:white;font-weight:600}nav button{background:#314e6d}button.secondary{background:#e1eaf2;color:#183b5a}button.danger{background:#a33d3d}main{max-width:960px;margin:auto;padding:20px 14px 80px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:12px}.card,.panel{background:white;border:1px solid #dae3ed;border-radius:12px;padding:18px;margin-bottom:14px}.card .label{font-size:.85rem;color:#52647a}.number{font-size:1.6rem;font-weight:750;margin-top:8px}h2{margin:8px 0 16px}h3{margin:8px 0 12px}.muted{color:#64758a;font-size:.88rem}.positive{color:#14734a}.negative{color:#ae3434}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}label{display:block;font-size:.88rem;font-weight:600;margin:12px 0 5px}input,select,textarea{width:100%;padding:11px;border:1px solid #bdcbd9;border-radius:8px;background:white;font:inherit}form{max-width:550px}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:520px}td,th{padding:11px 8px;text-align:left;border-bottom:1px solid #e6edf4}th{font-size:.82rem;color:#5b6d7f}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}.link{background:none;color:#1464a2;padding:0;text-align:left}.pill{background:#edf3f8;border-radius:30px;padding:4px 9px;font-size:.8rem} .notice{background:#fff7e5;border:1px solid #f0d7a4;padding:12px;border-radius:8px;margin:12px 0} .bar{height:9px;background:#e5ecf3;border-radius:10px;overflow:hidden}.bar span{display:block;background:#3178b9;height:100%} @media(max-width:500px){.number{font-size:1.4rem}nav button{padding:9px 11px}}
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1b303a;background:#f3f6f5;font-size:16px}*{box-sizing:border-box}body{margin:0}.shell{max-width:540px;margin:auto;min-height:100dvh;background:#f7f9f8;padding-bottom:92px}header{background:#162f3b;color:#fff;padding:calc(22px + env(safe-area-inset-top)) 22px 22px;display:flex;justify-content:space-between;align-items:center}header small{letter-spacing:2px;color:#a6c5c8;font-size:10px}h1{font-size:26px;margin:4px 0 0;letter-spacing:-.5px}.headicon{width:45px;height:45px;background:#d8eadc;color:#1d544b;border-radius:15px;display:grid;place-items:center;font-size:28px;font-weight:700}main{padding:18px 16px}.view{display:none}.view.active{display:block}.panel{background:white;border:1px solid #e3e9e6;border-radius:19px;padding:19px;margin-bottom:16px;box-shadow:0 3px 16px #12342309}.sectiontop{display:flex;justify-content:space-between;align-items:center;gap:12px}.sectiontop span,.muted{color:#6c7e83;font-size:13px}h2{font-size:19px;margin:0 0 17px}label{display:block;font-size:13px;font-weight:650;margin:16px 0 7px}input,select{font:inherit;width:100%;padding:13px 12px;border:1px solid #d9e3e1;border-radius:11px;background:#fbfcfb;color:#18313a;min-height:47px}input:focus,select:focus{outline:2px solid #8cbaa9}.amountWrap{display:flex;align-items:center;gap:8px;border:1px solid #d9e3e1;border-radius:14px;padding:0 15px}.amountWrap span{font-size:29px;color:#3d6960}.amountWrap input{font-size:35px;font-weight:700;border:0;outline:none!important;padding:14px 0;min-width:0}.cardchoices{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cardchoices button{border:1px solid #d7e3e0;border-radius:12px;padding:13px 6px;background:#f7faf9;font-weight:600;color:#33545a}.cardchoices button.selected{background:#f7faf9;border:3px solid #33545a;color:#33545a;box-shadow:none}.primary,.secondary,.danger{border:0;border-radius:12px;padding:13px 15px;font:inherit;font-weight:700;cursor:pointer}.primary{background:#1b6454;color:white}.secondary{background:#e5f0eb;color:#205746}.danger{background:#fae5e4;color:#9d3030}#entryForm>.primary{width:100%;margin-top:23px;padding:16px}.optional{margin-top:16px;color:#49656b}.optional summary{font-size:13px;cursor:pointer}.saved{font-size:14px;color:#186349;text-align:center;min-height:22px;margin:8px}.mini{font-size:13px;text-align:center;color:#60797b}.monthNav{display:flex;justify-content:space-between;align-items:center;margin:0 0 15px}.monthNav button{background:white;border:1px solid #dae6e0;border-radius:12px;font-size:28px;width:45px;height:43px;color:#1b6454}.monthNav.compact{margin-top:15px}.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}.stat{padding:16px;background:#e2efe8;border-radius:15px}.stat:nth-child(2){background:#e7edef}.stat small{font-size:10px;letter-spacing:1px;color:#4b6d6b}.stat b{font-size:23px;display:block;margin-top:9px}.barrow{margin:15px 0}.barlabel{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin-bottom:7px}.barlabel b{white-space:nowrap}.track{height:9px;background:#edf1f0;border-radius:99px;overflow:hidden}.fill{height:100%;background:#428773;border-radius:99px}.fill.over{background:#c66d55}.empty{color:#81918f;font-size:13px;padding:10px 0}.tx{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:13px 0;border-bottom:1px solid #edf1ee;cursor:pointer}.tx:last-child{border:0}.tx strong{font-size:15px}.tx small{display:block;color:#738486;font-size:12px;margin-top:4px}.tx b{white-space:nowrap}.inline{display:flex;gap:8px;align-items:center}.inline input{flex:1;min-width:0}.inline button{flex:none}.budgetitem{display:grid;grid-template-columns:1fr 110px;gap:8px;align-items:center;margin-bottom:8px;font-size:14px}.budgetitem input{padding:9px}.catitem{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #edf1ee;font-size:14px}.catitem button{background:none;border:0;color:#a04a4a}.warning{color:#9e5840;font-size:12px}.panel>button{width:100%;margin:8px 0}nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(540px,100%);background:#fff;border-top:1px solid #dce5e1;display:flex;justify-content:space-around;padding:9px 5px calc(10px + env(safe-area-inset-bottom));z-index:10}nav button{border:0;background:transparent;color:#6d8080;font-size:25px;width:25%;display:flex;align-items:center;flex-direction:column;gap:2px}nav span{font-size:10px}nav .selected{color:#1b6454;font-weight:700}dialog{width:min(95vw,470px);border:0;border-radius:18px;padding:20px;max-height:88vh;overflow:auto}dialog::backdrop{background:#0a222c77}dialog .inline{margin-top:20px;flex-wrap:wrap}dialog .inline button{flex:1}@media(min-width:700px){.shell{border-left:1px solid #e0e7e4;border-right:1px solid #e0e7e4}}
+
+/* v4: readable, separated transaction history on narrow screens */
+#historyList .transaction{display:block;width:100%;text-align:left;background:transparent;color:inherit;border:0;border-bottom:1px solid #edf1ee;border-radius:0;padding:13px 2px;cursor:pointer;white-space:normal;line-height:1.7;font:inherit}
+#historyList .transaction:last-child{border-bottom:0}
+#historyList .transaction-line{display:block;overflow-wrap:anywhere;font-size:14px}
+#historyList .transaction-line strong{font-weight:700}
+#historyList .tx-sep{white-space:pre;color:#72817f}
+#historyList .transaction-amount{white-space:nowrap}
+
+/* v7: category ordering controls */
+.category-order-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #edf1ee}
+.category-name{flex:1;min-width:0;overflow-wrap:anywhere}
+.category-actions{display:flex;align-items:center;gap:5px;flex-shrink:0}
+.category-actions button{margin:0}
+.category-actions .category-move{min-width:37px;min-height:40px;padding:6px 9px;font-size:19px;line-height:1}
+.category-actions button:disabled{opacity:.3;cursor:default}
+
+/* Record Spend 2.0 Stage 1 */
+.finance-panel{margin-top:20px}.finance-panel .primary{width:100%;margin-top:18px}.finance-total{font-size:30px;font-weight:750;margin:8px 0 16px;color:#1b6454}.finance-account-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #edf1ee;padding:11px 0;font-size:14px}.finance-account-row span{color:#4d6264}.finance-account-row button{padding:8px 10px;font-size:12px}.negative{color:#b5483a!important}h3{font-size:16px;margin:24px 0 10px}#financeForm [hidden],#financeEditForm [hidden]{display:none}
+
+/* Stage 2 */
+#recurringForm [hidden]{display:none}#recurringForm button[type=submit]{width:100%;margin-top:18px}.recurring-row{border-bottom:1px solid #edf1ee;padding:13px 0;display:flex;gap:10px;justify-content:space-between;align-items:center}.recurring-row small{display:block;color:#6c7e83;font-size:12px;margin-top:4px}.recurring-actions{display:flex;gap:5px;flex-direction:column}.recurring-actions button{font-size:12px;padding:7px 9px}
+
+/* Stage 3 financial trends and projection */
+.year-totals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}.year-totals div{font-size:12px;color:#58716d;background:#f0f6f2;border-radius:10px;padding:10px}.year-totals strong{display:block;font-size:17px;color:#173d35;margin-top:5px}.trend-row{display:grid;grid-template-columns:53px minmax(0,1fr) 88px;align-items:center;gap:7px;margin:10px 0;font-size:12px}.trend-row strong{text-align:right;font-size:12px}.trend-bars{display:flex;flex-direction:column;gap:3px}.trend-bar{height:7px;border-radius:4px;min-width:0}.trend-bar.income{background:#328a6d}.trend-bar.spend{background:#d38b57}.trend-list>.muted{margin:14px 0 0;font-size:11px}
+
+/* v15: scheduled current-account movements and overdraft warnings */
+.projection-schedule{margin-top:1rem}.projection-head,.projection-row{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:.65rem 0;border-bottom:1px solid var(--line,#d9dee5)}.projection-head{font-size:.78rem;opacity:.7;font-weight:600}.projection-row>div:first-child{min-width:0}.projection-row small{display:block;opacity:.75;margin-top:.2rem}.projection-values{text-align:right;white-space:nowrap}.projection-values span{display:block;font-size:.85rem}.projection-values strong{display:block;margin-top:.2rem}.projection-overdrawn{color:#b42318;background:rgba(180,35,24,.07);padding-left:.5rem;padding-right:.5rem;border-radius:.4rem}.projection-alert{color:#b42318;font-weight:600;margin-top:.9rem}
+
+/* v16: six independent, single-open Settings sections */
+#settings .settings-accordion{padding:0;overflow:hidden}
+#settings .settings-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:19px;background:transparent;border:0;color:#1b303a;text-align:left;font:inherit;font-size:19px;font-weight:700;cursor:pointer;min-height:62px}
+#settings .settings-toggle:focus-visible{outline:3px solid #8cbaa9;outline-offset:-4px}
+#settings .settings-chevron{font-size:25px;line-height:1;color:#58716d;transition:transform .15s ease}
+#settings .settings-toggle[aria-expanded="true"] .settings-chevron{transform:rotate(180deg)}
+#settings .settings-content{padding:0 19px 19px}
+#settings .settings-content[hidden]{display:none!important}
+#settings .settings-content>button{width:100%;margin:8px 0}
+#settings .settings-content>h3:first-child{margin-top:6px}
+
+/* v18 annual provisions */
+.provision-summary-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line,#e5e7eb)}
+.provision-summary-row span{flex:1;color:var(--muted,#667085);font-size:.9rem}.provision-summary-row strong{white-space:nowrap}
+.provision-item{border:1px solid var(--line,#d9dee5);border-radius:12px;margin:10px 0;padding:12px}
+.provision-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.provision-item summary small{font-size:.8rem;color:var(--muted,#667085)}
+.provision-item-body{padding-top:12px}.provision-item .recurring-actions{margin-top:12px}
+
+/* v19: expandable provision shortfall explanation; no financial logic changes */
+.provision-shortfall{margin:12px 0;border:1px solid var(--line,#e5e7eb);border-radius:10px;padding:10px 12px}
+.provision-shortfall summary{cursor:pointer;line-height:1.5;list-style:revert}
+.provision-shortfall .shortfall-hint{display:inline-block;text-decoration:underline;font-size:.85rem;margin-left:4px}
+.provision-shortfall[open] .shortfall-hint{display:none}
+.shortfall-breakdown{margin-top:12px}
+.shortfall-item{display:flex;justify-content:space-between;align-items:start;gap:12px;padding:10px 0;border-top:1px solid var(--line,#e5e7eb);font-size:.9rem}
+.shortfall-item div{min-width:0}.shortfall-item small{display:block;color:var(--muted,#667085);margin-top:3px;overflow-wrap:anywhere}
+.shortfall-item>strong{text-align:right;white-space:nowrap}
+
+/* v21: theoretical budget outlook */
+.budget-plan-details{margin-top:14px}.budget-plan-details summary{cursor:pointer;font-weight:600;padding:9px 0}.budget-plan-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.budget-plan-table{border-collapse:collapse;width:100%;font-size:.83rem;white-space:nowrap}.budget-plan-table th,.budget-plan-table td{text-align:right;padding:9px 7px;border-bottom:1px solid rgba(128,128,128,.22)}.budget-plan-table th:first-child,.budget-plan-table td:first-child{text-align:left}.budget-plan-table .negative{color:#b44848;font-weight:700}
+
+/* v22: optional per-month audit trail, without changing the ledger */
+.budget-trace-toggle{border:0;background:transparent;color:inherit;text-align:left;padding:6px 2px;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;white-space:nowrap}
+.budget-trace-row[hidden]{display:none}
+.budget-trace-row td{padding:6px 4px 14px!important}
+.budget-trace-content{text-align:left;white-space:normal;border:1px solid var(--border,#d5d9dd);border-radius:10px;padding:12px;line-height:1.55}
+.budget-trace-item{padding:10px 0;border-top:1px solid var(--border,#d5d9dd);font-size:.88rem}
+.budget-trace-item small{font-weight:normal;opacity:.7}
+
+/* Record Spend stylesheet version */
+:root{--rs-stylesheet-version:"v32"}
+#appVersionDetails{display:grid;grid-template-columns:1fr auto;gap:8px 14px;font-size:.9rem}#appVersionDetails strong{font-variant-numeric:tabular-nums}
+
+:root{--rs-stylesheet-version:"v32";}
+
+/* v34 Dashboard accordions; original data targets remain in each body. */
+#dashboard .dashboard-accordion { border:0; margin:0; }
+#dashboard .dashboard-accordion-head { display:flex; align-items:center; gap:10px; cursor:pointer; list-style:none; min-height:44px; }
+#dashboard .dashboard-accordion-head::-webkit-details-marker { display:none; }
+#dashboard .dashboard-accordion-label { font-size:1.18rem; font-weight:750; flex:1; min-width:0; }
+#dashboard .dashboard-accordion-total { font-size:1rem; font-weight:750; text-align:right; overflow-wrap:anywhere; }
+#dashboard .dashboard-accordion-chevron { font-size:1.4rem; color:#647e7a; transition:transform .15s; }
+#dashboard details[open] > .dashboard-accordion-head .dashboard-accordion-chevron { transform:rotate(180deg); }
+#dashboard .dashboard-accordion-body { padding-top:12px; }
+#dashboard .dashboard-accordion-head:focus-visible { outline:2px solid #1b6b57; outline-offset:4px; border-radius:6px; }
+@media (max-width:390px) { #dashboard .dashboard-accordion-label{font-size:1.05rem;} #dashboard .dashboard-accordion-total{font-size:.9rem;} }
